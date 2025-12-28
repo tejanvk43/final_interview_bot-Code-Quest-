@@ -258,6 +258,6 @@ export const calculateFinalScore = async (interviewTranscript: string) => {
 };
 
 // Deprecated wrapper removed or updated if needed elsewhere
-export const analyzeResume = async (input: any) => {
+export const analyzeResume = async (_input: any) => {
     return initializeInterviewSession("Legacy User", "General");
 };

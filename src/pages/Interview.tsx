@@ -29,7 +29,7 @@ const Interview: React.FC = () => {
   const webcamRef = useRef<Webcam>(null);
 
   const { transcript, startListening, stopListening, resetTranscript } = useSpeechToText();
-  const { startRecording, stopRecording, getBlob } = useMediaRecorder();
+  const { startRecording, stopRecording } = useMediaRecorder();
 
   // Sync Transcript to Answer Text
   useEffect(() => {
